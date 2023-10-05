@@ -7,12 +7,12 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "eslint": "8.50.0",
-    "eslint-config-custom": "*",
-    "prettier": "3.0.3",
-    "prettier-config-custom": "*",
     "@typescript-eslint/eslint-plugin": "6.7.4",
     "@typescript-eslint/parser": "6.7.4",
+    "eslint": "8.50.0",
+    "prettier": "3.0.3",
+    "eslint-config-custom": "file:*",
+    "prettier-config-custom": "file:*",
     "turbo": "1.10.15"
   },
   "packageManager": "npm@10.1.0",

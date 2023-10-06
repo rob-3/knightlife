@@ -1,18 +1,18 @@
-import cors from 'cors';
-import express from 'express';
+import cors from "cors";
+import express from "express";
 
-import { SampleType } from 'types';
+import { SampleType } from "types";
 
 const app = express();
-const port = 5000;
+const port = 5001;
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: "http://localhost:3000" }));
 
-app.get('/sampleData', (_, response) => {
+app.get("/sampleData", (_, response) => {
   const data: SampleType[] = [
-    { id: '1', name: 'John Doe' },
-    { id: '2', name: 'Jane Doe' },
-    { id: '3', name: 'John Smith' }
+    { id: "1", name: "John Doe" },
+    { id: "2", name: "Jane Doe" },
+    { id: "3", name: "John Smith" }
   ];
   response.json({ data });
 });

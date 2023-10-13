@@ -14,7 +14,7 @@ const config = {
       register: false
     },
     files: {
-      serviceWorker: generateSW ? undefined : "src/prompt-prompt-sw.ts"
+      serviceWorker: generateSW ? undefined : "src/prompt-sw.ts"
     }
   }
 };

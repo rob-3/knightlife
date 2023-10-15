@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { PageData } from "./$types";
+  //import type { PageData } from "./$types";
 
   let count = 0;
 
-  export let data: PageData;
-  const sampleData = data.data;
+//  export let data: PageData;
+  //const sampleData = data.data;
 </script>
 
 <button
@@ -13,13 +13,3 @@
 >
   Clicks: {count}
 </button>
-
-<!--Display data fetched-->
-<h1 class="mt-8 text-xl font-bold">Data fetched from Express backend:</h1>
-<ul class="mt-4 flex flex-col space-y-4">
-  {#each sampleData as item}
-    <li class="text-lg">
-      <span>{item.id}</span> - {item.name}
-    </li>
-  {/each}
-</ul>
